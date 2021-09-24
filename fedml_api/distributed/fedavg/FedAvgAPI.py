@@ -16,7 +16,7 @@ def FedML_init():
     worker_number = comm.Get_size()
     return comm, process_id, worker_number
 
-
+#process_id：进程id
 def FedML_FedAvg_distributed(process_id, worker_number, device, comm, model, train_data_num, train_data_global, test_data_global,
                              train_data_local_num_dict, train_data_local_dict, test_data_local_dict, args, model_trainer=None,
                              preprocessed_sampling_lists=None):
